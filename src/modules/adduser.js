@@ -1,26 +1,25 @@
 function addUser(nameInput, scoreInput, scores, ul) {
-    nameInput = document.getElementById('nameInput');
-    scoreInput = document.getElementById('scoreInput');
-    scores = document.getElementById('scoreDiv');
-    ul = document.getElementById('ul');
+  nameInput = document.getElementById('nameInput');
+  scoreInput = document.getElementById('scoreInput');
+  scores = document.getElementById('scoreDiv');
+  ul = document.getElementById('ul');
 
-    let li = document.createElement('li');
-    li.innerHTML = `${nameInput.value} : ${scoreInput.value}`
-    li.className = 'listItem'
+  const li = document.createElement('li');
+  li.innerHTML = `${nameInput.value} : ${scoreInput.value}`;
+  li.className = 'listItem';
 
-    const isEvenIndex = ul.children.length % 2 === 0;
+  const isEvenIndex = ul.children.length % 2 === 0;
 
-    if (isEvenIndex) {
-        li.style.backgroundColor = 'white';
-    } else {
-        li.style.backgroundColor = '#cdcbcb';
-    }
+  if (isEvenIndex) {
+    li.style.backgroundColor = 'white';
+  } else {
+    li.style.backgroundColor = '#cdcbcb';
+  }
 
-    ul.appendChild(li);
+  ul.appendChild(li);
 
-    nameInput.value = '';
-    scoreInput.value = '';
-
+  nameInput.value = '';
+  scoreInput.value = '';
 }
 
 export default addUser;
