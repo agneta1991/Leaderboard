@@ -15,7 +15,6 @@ const createNewGame = async (game) => {
     const response = await fetch(endpoint, requestData);
     const data = await response.json();
     const gameId = data.result.split(": ")[1].replace(" added.", "");
-    debugger
     localStorage.setItem('gameId', gameId);
     return  gameId;
 };

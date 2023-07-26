@@ -7,8 +7,6 @@ const refreshScores = async () => {
     console.log(data.result);
     return data.result; 
   };
-
-  refreshScores();
   
   export default refreshScores;
   
