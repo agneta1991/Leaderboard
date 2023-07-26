@@ -1,6 +1,6 @@
-import {gameId} from "../index.js";
-
-const onloadScore = async (userInput, scoreInput) => {
+const onloadScore = async (gameId) => {
+    const nameInput = document.getElementById('nameInput');
+    const scoreInput = document.getElementById('scoreInput');
     const game = "game";
     const scoresUrl = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`
     console.log(scoresUrl);
@@ -11,8 +11,8 @@ const onloadScore = async (userInput, scoreInput) => {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            user: userInput,
-            score: scoreInput
+            user: nameInput.value,
+            score: scoreInput.value
         })
     };
 
