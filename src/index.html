@@ -22,7 +22,8 @@
             <div class="score">
                 <h2>Add your score</h2>
                 <input type="text" id="nameInput" placeholder="Your name">
-                <input type="text" id="scoreInput" placeholder="Your score">
+                <input type="text" id="scoreInput" pattern="[0-9]*" required placeholder="Your score">
+                <span id="scoreError">Please enter a valid number</span>
                 <button id="submitBtn" type="submit">Submit</button>
             </div>
         </div>
