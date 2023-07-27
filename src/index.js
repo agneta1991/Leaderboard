@@ -22,7 +22,8 @@ submitBtn.addEventListener('click', () => {
 
 refreshBtn.addEventListener('click', async () => {
   const scores = await refreshScores(gameId);
-
+  const heading = document.getElementById('heading');
+  heading.classList.add('bigger');
   const resultTable = document.getElementById('ul');
   let child = resultTable.lastElementChild;
   while (child) {
