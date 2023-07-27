@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Leaderboard</title>
 </head>
+
 <body>
 
     <section class="container">
-        <h1>Leaderboard</h1>
+        <h1 id="heading">LEADERBOARD</h1>
         <div class="container2">
             <div class="recentDiv">
-                <div class = 'recent'>
+                <div class='recent'>
                     <h2>Recent score</h2>
                     <button id="refreshBtn">Refresh</button>
                 </div>
@@ -23,13 +28,14 @@
                 <h2>Add your score</h2>
                 <input type="text" id="nameInput" placeholder="Your name">
                 <input type="text" id="scoreInput" pattern="[0-9]*" required placeholder="Your score">
-                <span id="scoreError">Please enter a valid number</span>
+                <span id="scoreError">* Please enter a valid number</span>
                 <button id="submitBtn" type="submit">Submit</button>
             </div>
         </div>
 
     </section>
-    
-    
+
+
 </body>
+
 </html>
