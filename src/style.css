@@ -77,3 +77,8 @@ button {
   font-size: 1rem;
   border: 1px solid black;
 }
+
+#scoreError {
+  color: red;
+  display: none;
+}
